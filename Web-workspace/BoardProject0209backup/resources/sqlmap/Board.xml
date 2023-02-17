@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org/DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd" >
+<!-- 이 dtd를 통해 이 xml 파일은 mapper이고 이 코드로 문법 검사등을 하게 됨 -->
+<!-- 네임스페이스는 네임스페이스들끼리 이름이 중복만 안되면 문제 없음 -->
+<mapper namespace="myBoard">
+  <select id = "allBoards" resultType="Board">
+  <!-- id는 이 기능에 대해 이름을 붙여주는 것 -->
+  <![CDATA[
+  SELECT boardNum, boardTitle, boardContent, boardAuthor, boardDate, boardLike
+  FROM boards
+  ]]>
+  
+  </select>
+</mapper>

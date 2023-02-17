@@ -1,0 +1,19 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>Insert title here</title>
+</head>
+<body>
+	<h1>두 수를 더한 결과는?</h1>
+	<!-- 사용자 입력양식을 만들꺼에요! -->
+	<form action="http://127.0.0.1:8080/first/sum" method="post">
+	<!-- http://127.0.0.1:8080/first/sum 이것은 서블릿 호출하는 것임 -->
+	<input type="text" name="myNum1"> + <input type="text" name="myNum2">
+	<br><br>
+	<input type="submit" value="서버로 전송!">
+	<!-- button이 아니라 submit해야 form action 뒤 주소 서블릿에 요청을 보낼수있게됨 -->
+	</form>
+	<!-- 버튼 누르면 서브렛호출하도록 -->
+</body>
+</html>
